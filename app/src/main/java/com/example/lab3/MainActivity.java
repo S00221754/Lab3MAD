@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Rock 'n' Roll selected", Toast.LENGTH_SHORT).show();
             selected = "Rock";
         }
+        //starts the pie chart once a button has been clicked.
         Intent intent = new Intent(getApplicationContext(), Result_Pie_Chart.class);
         intent.putExtra("selected", selected);
         startActivity(intent);
